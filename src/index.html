@@ -9,12 +9,15 @@
     <script type="text/babel">
         const root = document.getElementById("root"); 
         function App() {
-            const [counter, modifier] = React.useState(0);
-            return (
+            const [counter, setCounter] = React.useState(0); //1
+            const onClick = () => {
+                setCounter(counter + 1); //4
+            };
+            return ( //사용자들이 보게 될 부분
                 <div>
-                <h3>Total clicks: {counter}</h3>
-                <button>Click me</button>
-            </div>
+                <h3>Total clicks: {counter}</h3> //1
+                <button onClick={onClick}>Click me</button> //3
+            </div> 
             );
         }
         ReactDOM.render(<App />, root);
