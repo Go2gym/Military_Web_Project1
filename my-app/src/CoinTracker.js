@@ -32,3 +32,6 @@ function CoinTracker() {
 }
 
 export default CoinTracker;
+
+
+//돈 입력받고 얼만큼의 코인을 살 수 있는지 계산하는 converter
