@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import App2 from './App2';
+import CoinTracker from './CoinTracker';
 
 ReactDOM.render( 
-    <App2 />,
+    <CoinTracker />,
   document.getElementById('root')
 );
