@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import Movie from "./Movie";
+import Movie from "../components/App_Movie";
 
-function App_Movie() {
-  const [loading, setLoading] = useState(true);
+function Home() {
+    const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState([]);
   const getMovies = async () => {
     const json = await (
@@ -24,6 +24,7 @@ function App_Movie() {
         <div>
           {movies.map((movie) => (
             <Movie
+              key={movie.id}
               coverImg={movie.medium_cover_image}
               title={movie.title}
               summary={movie.summary}
@@ -35,4 +36,5 @@ function App_Movie() {
     </div>
   );
 }
-export default App_Movie;
+
+export default Home;
