@@ -15,20 +15,20 @@ function Movie() {
     useEffect(() => {
         getMovies();
     }, []);
-    return <div>{loading ? (
-        <h1>Loading...</h1>
-    ) : (
+    return (
         <div>
-            {movies.map(movie => (
-                <div key={movie.id}>
-                    {movie.title}
+            {loading ? (
+                <h1>Loading...</h1>
+            ) : (
+                <div>
+                    {movies.map(movie => (
+                        <div key={movie.id}>
+                            {movie.title}
+                        </div>
+                    ))}
                 </div>
-            ))}
+            )}
         </div>
-    )}
-    </div>
-);
+    );
 }
 export default Movie;
-
-11:00

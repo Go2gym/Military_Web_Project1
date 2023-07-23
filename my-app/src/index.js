@@ -6,6 +6,6 @@ import CoinTracker from './CoinTracker';
 import Movie from './Movie';
 
 ReactDOM.render( 
-    <Movie />,
+    <CoinTracker />,
   document.getElementById('root')
 );

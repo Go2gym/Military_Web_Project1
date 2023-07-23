@@ -28,7 +28,6 @@ function CoinTracker() {
     return (
         <div>
             <h1>The Coins! {loading ? "" : `(${coins.length})`}</h1>
-            <form>
                 <input
                     onChange = {onChange}
                     //value = {money}
@@ -36,10 +35,10 @@ function CoinTracker() {
                     placeholder="write your money"
                 />
                 <button onClick={onClick}>{convert ? "convert" : "Turn Back"}</button>
-            </form >
             {loading ? (
                 <string>Loading... </string>
             ) : (
+                <div>
                 <select>
                     {coins.map((coin) => (
                         <option>
@@ -50,6 +49,7 @@ function CoinTracker() {
                         </option>
                     ))}
                 </select>
+                </div>
             )}
         </div>
     );
