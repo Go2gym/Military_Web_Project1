@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Movie from "../Movie";
+import styles from "./Movie.module.css";
 
 function Detail() {
   const { id } = useParams();
@@ -17,7 +18,7 @@ function Detail() {
   }, []);
   return (
     <div>
-    {data === false ? "" : <h1 text-align: center>{data.movie.title}</h1>}
+    {data === false ? "" : <h1 className={styles.movieTitle}>{data.movie.title}</h1>}
     </div>
   );
 }
