@@ -14,7 +14,6 @@ function Movie({ id, coverImg, title, summary, genres, rating }) {
           <div class="movieList">
             <div class="movieImg">
               <div class="movieImgBox">
-                <img src={coverImg} alt={title} onClick={moveTo} />
               </div>
             </div>
           </div>
