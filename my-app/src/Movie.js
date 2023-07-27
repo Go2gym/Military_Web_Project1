@@ -11,18 +11,15 @@ function Movie({ id, coverImg, title, summary, genres, rating }) {
     <div>
       <div class="header">
         <div class="movieBoxes">
-          <div class="movieImg">
-            <div class="movieImgBox">
-              <img src={coverImg} alt={title} onClick={moveTo} />
+          <div class="movieList">
+            <div class="movieImg">
+              <div class="movieImgBox">
+                <img src={coverImg} alt={title} onClick={moveTo} />
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <ul>
-        {genres.map((g) => (
-          <li key={g}>{g}</li>
-        ))}
-      </ul>
     </div>
   );
 }

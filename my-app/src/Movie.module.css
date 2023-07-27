@@ -2,10 +2,20 @@
     text-align: center;
 }
 
+.movieBoxes {
+
+}
+
+.movieList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .movieImg :hover .movieImgBox{
     opacity: 1;
 }
 
 .movieImgBox {
+    display: flex;
     opacity: 0;
 }
