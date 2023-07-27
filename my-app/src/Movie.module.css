@@ -1,3 +1,11 @@
 .movieTitle {
     text-align: center;
 }
+
+.movieImg :hover .movieImgBox{
+    opacity: 1;
+}
+
+.movieImgBox {
+    opacity: 0;
+}

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Movie from "../Movie";
-import styles from "./Movie.module.css";
+import styles from "../Movie.module.css";
 
 function Detail() {
   const { id } = useParams();
