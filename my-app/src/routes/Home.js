@@ -25,7 +25,7 @@ function Home() {
         <h1>Loading...</h1>
       ) : (
         <div>
-          <div className="header">asdasd</div>
+          <div className="header">CNEMA</div>
           <div className="movieBoxes">
             {movies.map((movie) => (
               <Movie
