@@ -1,0 +1,9 @@
+.header {
+    width: 100%;
+    height: 20px;
+}
+
+.movieBoxes {
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,13 +1,9 @@
-.header {
-    padding: 20px;
+.movieBox {
+    padding: 5px;
 }
 
 .movieTitle {
     text-align: center;
-}
-
-.movieBoxes {
-
 }
 
 .movieList {
@@ -15,11 +11,22 @@
     flex-wrap: wrap;
 }
 
-.movieImg :hover .movieImgBox{
-    opacity: 1;
+.movieImg :hover {
+    opacity: 0.7;
 }
 
 .movieImgBox {
     display: flex;
     opacity: 0;
+}
+
+img {
+    width: 230px;
+    height: 345px;
+}
+
+.dummyImg {
+    background-color: black;
+    width: 230px;
+    height: 345px;
 }

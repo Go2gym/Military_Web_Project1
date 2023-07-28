@@ -1,22 +1,19 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import styles from "./Movie.module.css";
+import style from "./Movie.module.css";
 
 function Movie({ id, coverImg, title, summary, genres, rating }) {
   const moveTo = () => {
     window.location.href = `/movie/${id}`;
   };
+  console.log(coverImg);
 
   return (
-    <div>
-      <div class="header">
-        <div class="movieBoxes">
-          <div class="movieList">
-            <div class="movieImg">
-              <div class="movieImgBox">
-              </div>
-            </div>
-          </div>
+    <div class={style.movieBox}>
+      <div class="movieList">
+        <div class={style.movieImg}>
+          {coverImg == undefined ? <div id='dummyImg'></div> : <img src={coverImg} />}
+          <div class="movieImgBox"></div>
         </div>
       </div>
     </div>
