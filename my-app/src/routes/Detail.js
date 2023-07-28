@@ -18,7 +18,15 @@ function Detail() {
   }, []);
   return (
     <div>
-    {data === false ? "" : <h1 className={styles.movieTitle}>{data.movie.title}</h1>}
+      {data === false ? (
+        ""
+      ) : (
+        <h1 className={styles.movieTitle}>{data.movie.title}</h1>
+      )}
+      <img className={styles.coverimg} src={data?.movie?.medium_cover_image} />
+      <div className={styles.box}>
+
+      </div>
     </div>
   );
 }
